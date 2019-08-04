@@ -1,0 +1,26 @@
+val = input()
+cod, quant = val.split(" ")
+cod = int(cod)
+quant = int(quant)
+if cod == 1:
+    prec = 4.00
+    tot = prec * quant
+    print('Total: R$ {:.2f}'.format(tot))
+elif cod == 2:
+    prec = 4.50
+    tot = prec * quant
+    print('Total: R$ {:.2f}'.format(tot))
+elif cod == 3:
+    prec = 5.00
+    tot = prec * quant
+    print('Total: R$ {:.2f}'.format(tot))
+elif cod == 4:
+    prec = 2.00
+    tot = prec * quant
+    print('Total: R$ {:.2f}'.format(tot))
+elif cod == 5:
+    prec = 1.50
+    tot = prec * quant
+    print('Total: R$ {:.2f}'.format(tot))
+else:
+    print('Código inválido')
