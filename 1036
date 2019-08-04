@@ -1,0 +1,16 @@
+Val = input()
+A, B, C = Val.split(" ")
+A = float(A)
+B = float(B)
+C = float(C)
+if (B ** 2 - 4 * A * C) < 0:
+    print('Impossivel calcular', end=’\n’)
+else:
+    if A == 0:
+        print('Impossivel calcular', end=’\n’)
+    else:
+        Delta = B ** 2 - 4 * A * C
+        R1 = ((-1 * B) + Delta ** (1 / 2)) / (2 * A)
+        R2 = ((-1 * B) - Delta ** (1 / 2)) / (2 * A)
+        print('R1 = {:.5f}'.format(R1), end=’\n’)
+        print('R2 = {:.5f}'.format(R2), end=’\n’)
