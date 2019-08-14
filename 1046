@@ -1,0 +1,12 @@
+val = input()
+i, f = val.split(' ')
+i = int(i)
+f = int(f)
+if i == f:
+    print('O JOGO DUROU 24 HORA(S)', end = '\n')
+elif i > f:
+    dur = (24 - i) + f
+    print('O JOGO DUROU {} HORA(S)'.format(dur), end = '\n')
+elif i < f:
+    dur = f - i
+    print('O JOGO DUROU {} HORA(S)'.format(dur), end = '\n')
