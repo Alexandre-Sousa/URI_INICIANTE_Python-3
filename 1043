@@ -1,0 +1,11 @@
+val = input()
+a, b, c = val.split(' ')
+a = float(a)
+b = float(b)
+c = float(c)
+if (a >= b + c) or (b >= a + c) or (c >= a + b):
+    area = ((a + b) * c) / 2
+    print('Area = {:.1f}'.format(area), end = '\n')
+else:
+    perimetro = a + b + c
+    print('Perimetro = {:.1f}'.format(perimetro), end = '\n')
