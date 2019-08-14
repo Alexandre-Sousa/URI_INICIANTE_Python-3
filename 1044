@@ -1,0 +1,8 @@
+val = input()
+a, b = val.split()
+a = int(a)
+b = int(b)
+if (a % b == 0) or (b % a == 0):
+    print('Sao Multiplos', end = '\n')
+else:
+    print('Nao sao Multiplos', end = '\n')
