@@ -1,0 +1,37 @@
+sal = float(input())
+r1 = 15
+r2 = 12
+r3 = 10
+r4 = 7
+r5 = 4
+
+if 0 <= sal <= 400.00:
+    nsal = sal * ((r1 / 100) + 1)
+    rea = nsal - sal
+    print('Novo salario: {:.2f}'.format(nsal))
+    print('Reajuste ganho: {:.2f}'.format(rea))
+    print('Em percentual: {} %'. format(r1), end = '\n')
+elif 400.01 <= sal <= 800.00:
+    nsal = sal * ((r2 / 100) + 1)
+    rea = nsal - sal
+    print('Novo salario: {:.2f}'.format(nsal))
+    print('Reajuste ganho: {:.2f}'.format(rea))
+    print('Em percentual: {} %'. format(r2), end = '\n')
+elif 800.01 <= sal <= 1200.00:
+    nsal = sal * ((r3 / 100) + 1)
+    rea = nsal - sal
+    print('Novo salario: {:.2f}'.format(nsal))
+    print('Reajuste ganho: {:.2f}'.format(rea))
+    print('Em percentual: {} %'. format(r3), end = '\n')
+elif 1200.01 <= sal <= 2000.00:
+    nsal = sal * ((r4 / 100) + 1)
+    rea = nsal - sal
+    print('Novo salario: {:.2f}'.format(nsal))
+    print('Reajuste ganho: {:.2f}'.format(rea))
+    print('Em percentual: {} %'. format(r4), end = '\n')
+elif sal > 2000.00:
+    nsal = sal * ((r5 / 100) + 1)
+    rea = nsal - sal
+    print('Novo salario: {:.2f}'.format(nsal))
+    print('Reajuste ganho: {:.2f}'.format(rea))
+    print('Em percentual: {} %'. format(r5), end = '\n')
