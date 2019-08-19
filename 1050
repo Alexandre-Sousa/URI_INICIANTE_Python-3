@@ -1,0 +1,20 @@
+ddd = int(input())
+
+if ddd == 61:
+    print('Brasilia', end = '\n')
+elif ddd == 71:
+    print('Salvador', end = '\n')
+elif ddd == 11:
+    print('Sao Paulo', end = '\n')
+elif ddd == 21:
+    print('Rio de Janeiro', end = '\n')
+elif ddd == 32:
+    print('Juiz de Fora', end = '\n')
+elif ddd == 19:
+    print('Campinas', end = '\n')
+elif ddd == 27:
+    print('Vitoria', end = '\n')
+elif ddd == 31:
+    print('Belo Horizonte', end = '\n')
+else:
+    print('DDD nao cadastrado', end = '\n')
