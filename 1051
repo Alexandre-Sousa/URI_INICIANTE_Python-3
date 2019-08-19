@@ -1,0 +1,24 @@
+sal = float(input())
+a = 8
+b = 18
+c = 28
+imp = impparcial = imptotal = 0.00
+
+if 0.00 <= sal <= 2000.00:
+    print('Isento', end = '\n')
+elif 2000.01 <= sal <= 3000.00:
+    sal = sal - 2000.00
+    imp = sal * (a / 100)
+    print('R$ {:.2f}'.format(imp), end = '\n')
+elif 3000.01 <= sal <= 4500.00:
+    sal = sal - 3000.00
+    impparcial = 1000.00 * (a / 100)
+    imp = sal * (b / 100)
+    imptotal = impparcial + imp
+    print('R$ {:.2f}'.format(imptotal), end = '\n')
+else:
+    sal = sal - 4500
+    impparcial = (1000.00 * (a / 100)) + (1500.00 * (b / 100))
+    imp = sal * (c / 100)
+    imptotal = impparcial + imp
+    print('R$ {:.2f}'.format(imptotal), end = '\n')
