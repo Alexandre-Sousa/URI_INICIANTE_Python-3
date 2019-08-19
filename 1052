@@ -1,0 +1,25 @@
+val = int(input())
+if val == 1:
+    print('January', end = '\n')
+elif val == 2:
+    print('February', end = '\n')
+elif val == 3:
+    print('March', end = '\n')
+elif val == 4:
+    print('April', end = '\n')
+elif val == 5:
+    print('May', end = '\n')
+elif val == 6:
+    print('June', end = '\n')
+elif val == 7:
+    print('July', end = '\n')
+elif val == 8:
+    print('August', end = '\n')
+elif val == 9:
+    print('September', end = '\n')
+elif val == 10:
+    print('October', end = '\n')
+elif val == 11:
+    print('November', end = '\n')
+elif val == 12:
+    print('December', end = '\n')
