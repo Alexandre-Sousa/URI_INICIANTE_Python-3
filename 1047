@@ -1,0 +1,20 @@
+val = input()
+he, me, hs, ms = val.split()
+he = int(he)
+me = int(me)
+hs = int(hs)
+ms = int(ms)
+he = he * 60
+hs = hs * 60
+tt = (hs + ms) - (he + me)
+hd = tt // 60
+md = tt % 60
+if hd == 0 and md == 0:
+    hd = 24
+    md = 0
+    print('O JOGO DUROU {} HORA(S) E {} MINUTO(S)'.format(hd, md), end = '\n')
+elif hd < 0:
+    hd = 24 - (hd * -1)
+    print('O JOGO DUROU {} HORA(S) E {} MINUTO(S)'.format(hd, md), end='\n')
+else:
+    print('O JOGO DUROU {} HORA(S) E {} MINUTO(S)'.format(hd, md), end = '\n')
