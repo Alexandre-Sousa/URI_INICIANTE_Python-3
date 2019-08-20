@@ -1,0 +1,20 @@
+contpar = contimpar = contpos = contneg = 0
+
+for i in range (0,5, 1):
+    a = float(input())
+    if (a % 2) == 0:
+        contpar = contpar +1
+        if a > 0:
+            contpos = contpos + 1
+        if a < 0:
+            contneg = contneg + 1
+    else:
+        contimpar = contimpar +1
+        if a > 0:
+            contpos = contpos + 1
+        if a < 0:
+            contneg = contneg + 1
+print('{} valor(es) par(es)'.format(contpar))
+print('{} valor(es) impar(es)'.format(contimpar))
+print('{} valor(es) positivo(s)'.format(contpos))
+print('{} valor(es) negativo(s)'.format(contneg), end = '\n')
