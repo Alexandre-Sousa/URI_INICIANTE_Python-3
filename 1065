@@ -1,0 +1,19 @@
+a = float(input())
+b = float(input())
+c = float(input())
+d = float(input())
+e = float(input())
+cont = 0
+
+if (a % 2) == 0:
+    cont = cont +1
+if (b % 2) == 0:
+    cont = cont +1
+if (c % 2) == 0:
+    cont = cont +1
+if (d % 2) == 0:
+    cont = cont +1
+if (e % 2) == 0:
+    cont = cont +1
+
+print('{} valores pares'.format(cont), end = '\n')
