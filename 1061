@@ -1,0 +1,34 @@
+inicio1 = input()
+inicio2 = input()
+fim1 = input()
+fim2 = input()
+
+non, dinicio = inicio1.split()
+hinicio, minicio, sinicio = inicio2.split(' : ')
+non, dfim = fim1.split()
+hfim, mfim, sfim = fim2.split(' : ')
+
+dinicio = (int(dinicio) * 86400)
+hinicio = (int(hinicio) * 3600)
+minicio = (int(minicio) * 60)
+sinicio = int(sinicio)
+
+dfim = (int(dfim) * 86400)
+hfim = (int(hfim) * 3600)
+mfim = (int(mfim) * 60)
+sfim = int(sfim)
+
+totalinicio = dinicio + hinicio + minicio + sinicio
+totalfim = dfim + hfim + mfim + sfim
+
+delta = totalfim - totalinicio
+
+dtot = delta // 86400
+htot = (delta - (dtot * 86400)) // 3600
+mtot = (delta - ((dtot * 86400) + (htot * 3600))) // 60
+stot = delta % 60
+
+print('{} dia(s)'.format(dtot))
+print('{} hora(s)'.format(htot))
+print('{} minuto(s)'.format(mtot))
+print('{} segundo(s)'.format(stot), end = '\n')
