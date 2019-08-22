@@ -1,0 +1,7 @@
+val = int(input())
+if (val % 2) != 0:
+    for i in range (val, val + 12, 2):
+        print(i)
+else:
+    for i in range (val + 1, val + 13, 2):
+        print(i)
