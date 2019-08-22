@@ -1,0 +1,5 @@
+val = int(input())
+quad = 0
+for i in range(2, val + 1, 2):
+    quad = i ** 2
+    print('{}^2 = {}'.format(i, quad))
