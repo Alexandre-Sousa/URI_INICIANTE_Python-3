@@ -1,0 +1,15 @@
+val = int(input())
+for s in range(0, val):
+    soma = 0
+    z = input()
+    a, b = z.split()
+    a = int(a)
+    b = int(b)
+    if a > b:
+        n = a
+        a = b
+        b = n
+    for i in range(a + 1, b):
+        if i % 2 != 0:
+            soma = soma + i
+    print(soma, end = '\n')
