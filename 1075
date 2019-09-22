@@ -1,0 +1,4 @@
+val = int(input())
+for s in range(2, 10000, 1):
+    if s % val == 2:
+        print(s, end = '\n')
