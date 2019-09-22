@@ -1,0 +1,11 @@
+a = 0
+b = 1
+while a != b:
+    val = input()
+    a, b = val.split(' ')
+    a = int(a)
+    b = int(b)
+    if b > a:
+        print('Crescente', end = '\n')
+    elif a > b:
+        print('Decrescente', end = '\n')
