@@ -1,0 +1,21 @@
+a = 1
+b = 1
+while (a >= 0) or (b >= 0):
+    val = input()
+    n = 0
+    lista = []
+    a, b = val.split()
+    a = int(a)
+    b = int(b)
+    if (a <= 0) or (b <= 0):
+        break
+    if a > b:
+        n = a
+        a = b
+        b = n
+    for s in range(a, b + 1):
+        lista.append(s)
+    for s in range(0, len(lista)):
+        print(lista[s], end = '')
+        print(' ', end = '')
+    print('Sum={}'.format(sum(lista)), end = '\n')
