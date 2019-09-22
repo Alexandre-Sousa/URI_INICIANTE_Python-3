@@ -1,0 +1,9 @@
+val = int(input())
+for i in range(1, val + 1, 1):
+    entrada = input()
+    a, b, c = entrada.split(' ')
+    a = float(a)
+    b = float(b)
+    c = float(c)
+    media = ((a * 2) + (b * 3) + (c * 5)) / 10
+    print('{:.1f}'.format(media), end = '\n')
