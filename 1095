@@ -1,0 +1,4 @@
+b = 60
+for a in range(1, 38, 3):
+	print('I={} J={}'.format(a, b), end = '\n')
+	b = b - 5
