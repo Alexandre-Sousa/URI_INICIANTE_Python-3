@@ -1,0 +1,29 @@
+val = int(input())
+rato = 0
+sapo = 0
+coelho = 0
+total = 0
+percr = 0
+percs = 0
+percx = 0
+for s in range(0, val, 1):
+    exp = input()
+    quant, tipo = exp.split()
+    quant = int(quant)
+    if tipo == 'R':
+        rato = rato + quant
+    elif tipo == 'S':
+        sapo = sapo + quant
+    else:
+        coelho = coelho + quant
+    total = total + quant
+percr = (rato / total) * 100
+percs = (sapo / total) * 100
+percc = (coelho / total) * 100
+print('Total: {} cobaias'.format(total), end = '\n')
+print('Total de coelhos: {}'.format(coelho), end = '\n')
+print('Total de ratos: {}'.format(rato), end = '\n')
+print('Total de sapos: {}'.format(sapo), end = '\n')
+print('Percentual de coelhos: {:.2f} %'.format(percc), end = '\n')
+print('Percentual de ratos: {:.2f} %'.format(percr), end = '\n')
+print('Percentual de sapos: {:.2f} %'.format(percs), end = '\n')
