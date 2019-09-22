@@ -1,0 +1,8 @@
+val = 0
+while val != 2002:
+    val = int(input())
+    if val == 2002:
+        print('Acesso Permitido', end = '\n')
+        break
+    else:
+        print('Senha Invalida')
