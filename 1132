@@ -1,0 +1,12 @@
+a = int(input())
+b = int(input())
+n = 0
+soma = 0
+if a > b:
+    n = a
+    a = b
+    b = n
+for z in range(a, b + 1, 1):
+    if z % 13 != 0:
+        soma = soma + z
+print(soma, end = '\n')
