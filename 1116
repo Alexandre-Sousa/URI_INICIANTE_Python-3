@@ -1,0 +1,11 @@
+val = int(input())
+for a in range(0, val, 1):
+    valores = input()
+    n, d = valores.split()
+    n = int(n)
+    d = int(d)
+    if d == 0:
+        print('divisao impossivel', end = '\n')
+    else:
+        quoc = n / d
+        print('{:.1f}'.format(quoc), end = '\n')
