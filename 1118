@@ -1,0 +1,18 @@
+val = 0
+dec = 0
+while dec != 2:
+    som = 0.0
+    mon = 0
+    dec = 0
+    while mon < 2:
+        val = float(input())
+        if val < 0.0 or val > 10.0:
+            print('nota invalida', end = '\n')
+        else:
+            som = som + val
+            mon = mon + 1
+    media = som / 2
+    print('media = {:.2f}'.format(media), end = '\n')
+    while dec < 1 or dec > 2:
+        print('novo calculo (1-sim 2-nao)', end = '\n')
+        dec = int(input())
