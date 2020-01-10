@@ -1,0 +1,30 @@
+somainter = 0
+somagremio = 0
+empate = 0
+ngrenal = 0
+flag = 0
+while flag != 2:
+    val = input()
+    inter, gremio = val.split()
+    inter = int(inter)
+    gremio = int(gremio)
+
+    if inter > gremio:
+        somainter = somainter + 1
+    elif gremio > inter:
+        somagremio = somagremio + 1
+    else:
+        empate = empate + 1
+    print('Novo grenal (1-sim 2-nao)', end = '\n')
+    flag = int(input())
+    ngrenal = ngrenal + 1
+print('{} grenais'.format(ngrenal), end = '\n')
+print('Inter:{}'.format(somainter), end = '\n')
+print('Gremio:{}'.format(somagremio), end = '\n')
+print('Empates:{}'.format(empate), end = '\n')
+if somainter > somagremio:
+    print('Inter venceu mais', end = '\n')
+elif somagremio > somainter:
+    print('Gremio venceu mais', end = '\n')
+else:
+    print('Nao houve vencedor', end = '\n')
