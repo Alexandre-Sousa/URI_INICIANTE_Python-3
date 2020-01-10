@@ -1,0 +1,11 @@
+mont = 0
+som = 0
+while mont < 2:
+    val = float(input())
+    if val < 0 or val > 10:
+        print('nota invalida', end = '\n')
+    else:
+        som = som + val
+        mont = mont + 1
+media = som / 2
+print('media = {:.2f}'.format(media), end = '\n')
