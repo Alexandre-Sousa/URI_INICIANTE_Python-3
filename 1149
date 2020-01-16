@@ -1,0 +1,17 @@
+val = input()
+lista = []
+lista = val.split()
+cont = 0
+a = 1
+soma = 0
+limite = 0
+inicio = int(lista[0])
+while cont != len(lista):
+    lista[a] = int(lista[a])
+    if lista[a] > 0:
+        limite = lista[a]
+        break
+    a = a + 1
+for s in range(inicio, inicio + limite, 1):
+    soma = soma + s
+print(soma, end = '\n')
