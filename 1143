@@ -1,0 +1,5 @@
+val = int(input())
+a = 1
+while a != val + 1:
+    print('{} {} {}'.format(a, a ** 2, a ** 3), end = '\n')
+    a = a + 1
