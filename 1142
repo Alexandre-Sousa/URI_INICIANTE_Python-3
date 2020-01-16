@@ -1,0 +1,9 @@
+val = int(input())
+teste = 0
+a = 1
+while teste != val:
+    for z in range(a, a + 3, 1):
+        print(z, end = ' ')
+    print('PUM', end = '\n')
+    a = a + 4
+    teste = teste + 1
