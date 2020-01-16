@@ -1,0 +1,16 @@
+val = int(input())
+alc = 0
+gas = 0
+diesel = 0
+while val != 4:
+    if val == 1:
+        alc = alc + 1
+    elif val == 2:
+        gas = gas + 1
+    elif val == 3:
+        diesel = diesel + 1
+    val = int(input())
+print('MUITO OBRIGADO', end = '\n')
+print('Alcool: {}'.format(alc))
+print('Gasolina: {}'.format(gas), end = '\n')
+print('Diesel: {}'.format(diesel), end = '\n')
