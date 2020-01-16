@@ -1,0 +1,7 @@
+val = 1
+while val != 0:
+    val = int(input())
+    for s in range(1, val, 1):
+        print(s, end = ' ')
+    if val != 0:
+        print(val)
